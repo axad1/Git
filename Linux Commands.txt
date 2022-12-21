@@ -1,0 +1,9 @@
+Linux Commands
+
+touch
+cat
+pwd (present working directory)
+ls (list content)
+cd (change directory)
+mv (move | rename)
+rm (remove)
