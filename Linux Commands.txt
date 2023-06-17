@@ -1,9 +1,14 @@
 Linux Commands
 
-touch
-cat
+touch (create a new file)
+cat (show content of a file)
+
 pwd (present working directory)
-ls (list content)
+ls (list content) [-a -l]
 cd (change directory)
+mkdir (make directory)
+rmdir (remove directory)
+
 mv (move | rename)
-rm (remove)
+rm (remove) [-r -f]
+

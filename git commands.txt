@@ -1,39 +1,49 @@
+git config -l
 git config --list
+
+git config --global
+git config --system
+git config --local
+git config --worktree
+
 git config user.name "name"
 git config user.email "email"
-git config --global alias."alias_name" "value"
+git config alias."alias_name" "value" --global
+
+git config credential.useHttpPath true (authentication with http enable)
+
+git clone <URL>
+git clone <URL> <folder_name>
+
+git init (initialize git )
+rm -rf .git (remove git)
 
 git status
-git init
-rm -rf .git (to remove)
+
+touch .gitignore (create a file)
 
 git add -A (to track files)
 git add --a
 git add --all
 git add . (to insert file into stage area)
 
-git restore --staged "file name" (unstaged a file)
-
-git rm --cached "file_name" (to untrack)
-| git rm "file_name" --cache
-git reset (to untrack all files)
-
-git checkout -- "file name" (return to last commited stage)
-git checkout -f (return all to previous commited stage)
-
-git commit -m "message"
-git commit -a -m (skipping staging area)
-
-git diff (difference b/w modified and with staged)
-git diff --staged (difference b/w staged with last commited)
-
-git clone URL
-git clone URL "folder_name"
-
-touch .gitignore (create a file)
-
 git mv "name" "new name" (rename)
 git rm "filename" (remove)
+
+git restore --staged "file name" (unstaged a file)
+
+git rm --cached "file_name" (untrack)
+git rm "file_name" --cache (untrack)
+git reset (untrack all files)
+
+git checkout -- "file name" (remove changes and return to last commited stage)
+git checkout -f (remove changes and return all files to previous commited stage)
+
+git commit -m "message"
+git commit -a -m (skip staging area and commit directly)
+
+git diff (diff b/w modified and staged)
+git diff --staged (diff b/w staged with last commited)
 
 git log
 git log -(argument)
@@ -55,12 +65,11 @@ git log --pretty=format:"%h -- %an"
 i.e     %h=hash     %an=author name     %ae=author email
 
 git remote
-git remote add origin "git@github.com:AsadHusn/Test.git"
+git remote add <REMOTE-NAME> <URL>
 git remote -v
-git push -u origin master
+git push -u <REMOTE-NAME> <BRANCH>
 
-to edit a commit or amend a change
-git commit --amend (change commit msg)
+git commit --amend (edit a commit or amend a change)
 i = insert (opens vim editor)
 esc + :wq (to exit from vim)
 
@@ -69,9 +78,12 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 (t = type) (b = bytes) (C = comment)
 cat id_key (to display the key)
 
-Adding your SSH key to the ssh-agent
+Start or Kill ssh-agent
 eval "$(ssh-agent -s)" (Agent start)
 eval "$(ssh-agent -k)" (Agent kill)
+
+Adding your SSH key to the ssh-agent
+ssh-add <privateKey>
 
 git stash
 git stash pop
@@ -80,9 +92,6 @@ git stash drop
 
 git branch (branch list)
 git branch -v (branch list with commit details)
-git branch 
 
 reset commit username and email
 git rebase -i HEAD~2 --exec "git commit --amend --reset-author --no-edit"
-
-

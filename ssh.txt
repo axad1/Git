@@ -1,0 +1,11 @@
+Generating a new SSH key
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+(t = type) (b = bytes) (C = comment)
+cat id_key (to display the key)
+
+Start or Kill ssh-agent
+eval "$(ssh-agent -s)" (Agent start)
+eval "$(ssh-agent -k)" (Agent kill)
+
+Adding SSH key private to the ssh-agent
+ssh-add <privateKey>
