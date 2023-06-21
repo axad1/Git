@@ -93,5 +93,7 @@ git stash drop
 git branch (branch list)
 git branch -v (branch list with commit details)
 
+git branch --set-upstream-to=origin/<branch> <branch>
+
 reset commit username and email
 git rebase -i HEAD~2 --exec "git commit --amend --reset-author --no-edit"
