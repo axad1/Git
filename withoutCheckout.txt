@@ -1,0 +1,7 @@
+
+MERGE (. = local)
+git fetch . <feature>:<main>
+git fetch origin <feature>:<main>
+
+PUSH
+git push origin <local>:<remote>
