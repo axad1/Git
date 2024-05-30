@@ -1,0 +1,3 @@
+git config core.filemode false
+or
+git config --global core.autocrlf true
