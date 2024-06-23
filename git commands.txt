@@ -97,3 +97,9 @@ git branch --set-upstream-to=origin/<branch> <branch>
 
 reset commit username and email
 git rebase -i HEAD~2 --exec "git commit --amend --reset-author --no-edit"
+
+(remove untacked files)
+git clean -n
+git clean -f
+git clean -f -d (for subfolders)
+
