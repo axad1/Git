@@ -1,0 +1,7 @@
+git config core.filemode false
+or
+git config --global core.autocrlf true
+
+--------------
+timedatectl show
+timedatectl set-local-rtc 1
