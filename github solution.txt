@@ -1,1 +1,2 @@
-git config credential.useHttpPath true
+git config --global credential.useHttpPath true
+git config --global safe.directory *
