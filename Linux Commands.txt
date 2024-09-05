@@ -12,3 +12,4 @@ rmdir (remove directory)
 mv (move | rename)
 rm (remove) [-r -f]
 
+echo $SHELL
