@@ -1,0 +1,27 @@
+default without gcm
+git config --global credential.helper cache
+
+store in file ~/.git-credentials
+git config --global credential.helper store
+
+--------------
+install gcm deb (must) not with curl sh
+
+1. set gcm
+git-credential-manager configure
+or
+git config --global credential.helper /usr/local/bin/git-credential-manager
+
+2. set environment variable
+GCM_CREDENTIAL_STORE=cache
+GCM_CREDENTIAL_STORE=plaintext
+GCM_CREDENTIAL_STORE=gpg
+or
+git config --global credential.credentialStore cache
+git config --global credential.credentialStore plaintext
+git config --global credential.credentialStore gpg
+
+
+uninstall deb
+git-credential-manager unconfigure
+sudo dpkg -r gcm

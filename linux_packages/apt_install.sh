@@ -1,0 +1,1 @@
+sudo apt update && xargs sudo apt install -y < ./apt_packages.txt

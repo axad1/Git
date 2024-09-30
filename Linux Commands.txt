@@ -13,3 +13,5 @@ mv (move | rename)
 rm (remove) [-r -f]
 
 echo $SHELL
+
+neofetch
