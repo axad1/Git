@@ -1,0 +1,1 @@
+xargs npm i -g -y < ./npm_packages.txt

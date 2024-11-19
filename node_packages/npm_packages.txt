@@ -1,0 +1,5 @@
+typescript
+tsx
+nodemon
+json-server
+create-react-app-offline
