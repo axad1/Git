@@ -1,0 +1,11 @@
+check limit
+cat /proc/sys/fs/inotify/max_user_watches
+
+
+increase the limit
+sudo sysctl fs.inotify.max_user_watches=524288
+
+persist the change
+echo "fs.inotify.max_user_watches=524288" | sudo tee -a /etc/sysctl.conf
+sudo sysctl -p
+
