@@ -1,0 +1,6 @@
+timedatectl show
+timedatectl set-local-rtc 1
+
+------------------------
+Remove animations in ubuntu 20
+gsettings set org.gnome.desktop.interface enable-animations false

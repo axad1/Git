@@ -1,6 +1,0 @@
-git config --global credential.useHttpPath true
-git config --global safe.directory "*"
-
--------------------
-git config --global core.filemode false
-git config --global core.autocrlf true
