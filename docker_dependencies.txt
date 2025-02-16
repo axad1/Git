@@ -1,0 +1,4 @@
+qemu-system-x86
+docker-ce-cli
+pass
+uidmap
