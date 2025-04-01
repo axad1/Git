@@ -6,3 +6,4 @@ create-react-app-offline
 npkill
 pnpm
 @nestjs/cli
+prisma
