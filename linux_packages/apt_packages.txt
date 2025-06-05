@@ -4,3 +4,11 @@ curl
 kitty
 redis
 postgresql
+mysql-server
+flameshot
+build-essential
+python3
+make
+g++
+ddccontrol gddccontrol ddccontrol-db i2c-tools
+ddcutil ddcui

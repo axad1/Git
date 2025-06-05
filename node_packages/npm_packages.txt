@@ -5,5 +5,7 @@ json-server
 create-react-app-offline
 npkill
 pnpm
-@nestjs/cli
+yarn
 prisma
+@nestjs/cli
+sequelize-cli
