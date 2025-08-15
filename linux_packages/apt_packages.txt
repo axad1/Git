@@ -14,5 +14,7 @@ make
 g++
 ddccontrol gddccontrol ddccontrol-db i2c-tools
 ddcutil ddcui
-ubuntu-restricted-extras
 flatpak
+gnome-terminal
+docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+pgadmin4
