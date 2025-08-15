@@ -1,0 +1,7 @@
+# add docker repository first
+docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+# need to confirm action in this
+ffmpeg
+libfuse2
+ubuntu-restricted-extras
