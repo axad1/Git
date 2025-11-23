@@ -18,3 +18,7 @@ flatpak
 gnome-terminal
 docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 pgadmin4
+linux-wifi-hotspot
+libinput-tools xdotool wmctrl
+dos2unix
+

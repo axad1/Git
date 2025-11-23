@@ -1,0 +1,13 @@
+# install the apt packages
+
+# clone repo
+git clone https://github.com/bulletmark/libinput-gestures.git
+cd libinput-gestures
+sudo ./libinput-gestures-setup install
+
+# Then add your user to the input group:
+sudo gpasswd -a $USER input
+
+# reboot and then start
+libinput-gestures-setup autostart start
+
